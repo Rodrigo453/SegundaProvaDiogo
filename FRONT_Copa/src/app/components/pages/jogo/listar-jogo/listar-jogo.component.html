@@ -1,0 +1,26 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title> Jogos </mat-card-title>
+
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Selecao A</th>
+        <th>Placar A</th>
+        <th>X</th>
+        <th>Placar B</th>
+        <th>Selecao B</th>
+      </tr>
+      <tr *ngFor="let jogo of jogos">
+        <td>{{ jogo.id }}</td>
+        <td>{{ jogo.selecaoA?.nome }}</td>
+        <!-- <td>{{ jogo.placarA }}</td> -->
+        <td>X</td>
+        <!-- <td>{{ jogo.placarB }}</td> -->
+        <td>{{ jogo.selecaoB?.nome }}</td>
+      </tr>
+    </table>
+
+  </mat-card-header>
+  <mat-card-content> </mat-card-content>
+</mat-card>
